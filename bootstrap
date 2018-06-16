@@ -271,8 +271,10 @@ sudo snap install phpstorm --classic
 # Telegram 
 sudo add-apt-repository ppa:atareao/telegram 
 sudo apt update
-sudo apt install telegram
+sudo apt -y install telegram
 
+# Steam
+sudo apt-get -y install steam
 
 
 
