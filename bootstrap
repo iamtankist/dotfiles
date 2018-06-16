@@ -253,6 +253,15 @@ wget https://releases.hashicorp.com/vagrant/2.1.1/vagrant_2.1.1_x86_64.deb
 sudo dpkg -i vagrant_2.1.1_x86_64.deb
 rm vagrant_2.1.1_x86_64.deb
 
+git clone https://github.com/zant95/elementary-dropbox /tmp/elementary-dropbox
+bash /tmp/elementary-dropbox/install.sh
+
+
+# Spotify
+sudo apt-get install -y snapd 
+sudo snap install spotify
+
+
 
 
 echo ""
