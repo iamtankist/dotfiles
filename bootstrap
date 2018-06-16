@@ -261,6 +261,16 @@ bash /tmp/elementary-dropbox/install.sh
 sudo apt-get install -y snapd 
 sudo snap install spotify
 
+sudo snap install slack --classic
+sudo snap install postman --classic
+sudo snap install phpstorm --classic
+
+
+# Telegram 
+sudo add-apt-repository ppa:atareao/telegram 
+sudo apt update
+sudo apt install telegram
+
 
 
 
