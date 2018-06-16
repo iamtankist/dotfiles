@@ -225,12 +225,22 @@ bootstrap_echo "Done!"
 # 7. Installing Everything Else
 ################################################################################
 
-bootstrap_echo "Step 7. Installin Ansible"
+bootstrap_echo "Step 7. Install Everything Else"
+
+# Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
-
 sudo apt-get update 
 sudo apt-get install -y google-chrome-stable
+
+# Docker
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable"
+sudo apt-get update
+sudo apt-get install -y docker-ce
+sudo apt-get -y install python-pip
+sudo pip install docker-compose
+
 
 
 echo ""
