@@ -209,7 +209,16 @@ rm -rf "$HOME"/src/fonts
 
 bootstrap_echo "Done!"
 
+################################################################################
+# 7. Installing ansible
+################################################################################
 
+bootstrap_echo "Step 7. Installin Ansible"
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install ansible
+
+bootstrap_echo "Done!"
 
 echo ""
 echo "******************************************************************"
